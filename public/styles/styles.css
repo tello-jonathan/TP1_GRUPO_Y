@@ -22,7 +22,7 @@
 
 html {
   font-family: 'Bebas Neue', cursive;
-  font-size: 70.5%;
+  font-size: 62.5%;
   color: var(--tertiary-color);
   scroll-behavior: smooth;
 }
@@ -35,7 +35,7 @@ html {
   }
 
   .nav-top {
-    font-size: 2em;
+    font-size: 1em;
     display: block;
   }
 
@@ -219,18 +219,18 @@ html {
   }
 
   .section-footer--links>ul>li {
-    padding: 18px;
+    padding: 16px;
     text-align: center;
   }
 
   .section-footer--links>ul>li>a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
   }
 
   .section-footer--social>p {
     padding: 50px;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
@@ -345,7 +345,7 @@ html {
   }
 
   .title-section {
-    font-size: 6em;
+    font-size: 4.8em;
     color: var(--tertiary-color);
   }
 
@@ -1136,7 +1136,7 @@ html {
   .section-hots {
     width: 40%;
     position: absolute;
-    top: 90px;
+    top: 100px;
     right: 30px;
   }
 

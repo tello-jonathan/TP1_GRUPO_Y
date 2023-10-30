@@ -12,14 +12,14 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark shadow-sm fs-3">
+        <nav class="navbar navbar-expand-md navbar-black fs-3 text shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('inicio') }}">
                     <img src="img/adventure.svg" alt="icon adventure" width="124" height="40">
@@ -31,13 +31,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        @guest
-                            <li class="nav-item"><a class="nav-link" href="{{ route('inicio') }}">{{ __('Inicio') }}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('inicio') }}">{{ __('Escapadas') }}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('inicio') }}">{{ __('Paquetes') }}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('inicio') }}">{{ __('Actividades') }}</a></li>
-
-                        @endguest
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Paquetes</a></li>
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Escapadas</a></li>
 
                     </ul>
 
@@ -47,13 +43,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -84,29 +80,28 @@
             @yield('content')
         </main>
         <footer>
-            <div class="footer">
+            <footer class="footer">
                 <section class="section-footer--links">
-                    <ul>
-                      <li><a href=""><img src="img/adventure.svg" alt=""></a></li>
-                      <li><a class="text-white ps-2 pe-2" href="index.html">Inicio</a></li>
-                      <li><a class="text-white ps-2 pe-2" href="pages/travels.html">Paquetes</a></li>
-                      <li><a class="text-white ps-2 pe-2" href="pages/activities.html">Actividades</a></li>
-                      <li><a class="text-white ps-2 pe-2" href="pages/getaways.html">Escapadas</a></li>
-                      <li><a class="text-white ps-2 pe-2" href="pages/contact.html">Contactanos</a></li>
-                      <li><a class="text-white ps-2 pe-2" href="pages/about.html">Nosotros</a></li>
-                    </ul>
-                  </section>
-                  <section class="section-footer--social">
-                    <p class="title-section">Seguinos en nuestras redes</p>
-                    <div class="section-footer--social-container">
-                      <a href="#"><img src="img/instagram.svg" alt=""></a>
-                      <a href="#"><img src="img/facebook.svg" alt=""></a>
-                      <a href="#"><img src="img/youtube.svg" alt=""></a>
-                    </div>
+                  <ul>
+                    <li><a href=""><img src="img/adventure.svg" alt=""></a></li>
+                    <li><a class="text-white ps-2 pe-2" href="index.html">Inicio</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="pages/travels.html">Paquetes</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="pages/activities.html">Actividades</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="pages/getaways.html">Escapadas</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="pages/contact.html">Contactanos</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="pages/about.html">Nosotros</a></li>
+                  </ul>
                 </section>
-            </div>
+                <section class="section-footer--social">
+                  <p class="title-section">Seguinos en nuestras redes</p>
+                  <div class="section-footer--social-container">
+                    <a href="#"><img src="img/instagram.svg" alt=""></a>
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/youtube.svg" alt=""></a>
+                  </div>
+                </section>
+            </footer>
         </footer>
-        <script src="../js/bootstrap.min.js"></script>
     </div>
 </body>
 </html>
