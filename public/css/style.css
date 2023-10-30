@@ -1,0 +1,1235 @@
+/*
+1.Posicionamiento
+2.Modelo de caja(Ej: Medidas del box model, Margin, Padding, Etc.)
+3.Tipografia
+4.Visuales
+5.Otros
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --primary-color: #02161D;
+  --secondary-color: #4a4a48;
+  --tertiary-color: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 70.5%;
+  color: var(--tertiary-color);
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 320px) {
+
+  /* Header */
+  .navbar {
+    background-color: var(--primary-color);
+  }
+
+  .nav-top {
+    font-size: 2em;
+    display: block;
+  }
+
+  .nav-bottom {
+    font-size: 1.6em;
+  }
+
+  /* Back Office */
+  #profile-avatar {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-back-office >.card-title {
+    font-size: 3.5em;
+    color: var(--tertiary-color);
+  }
+
+  .comentario-card >.card-title {
+    font-size: 2em;
+    color: var(--tertiary-color);
+  }
+
+  .card-back-office >.btn {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  /* Main */
+  .section-header {
+    padding: 150px 25px;
+    width: 100vw;
+    height: auto;
+  }
+
+  .card-titles-container {
+    color: var(--tertiary-color);
+  }
+
+  #card-title-contact {
+    font-size: 4.8em;
+    text-align: center;
+  }
+
+  .card-subtitle {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  /* Log in Page */
+  #login-section-header {
+    background-image: url("../img/login/login-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .login-foot {
+    display: grid;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--tertiary-color);
+  }
+
+  .login-section-body {
+    padding: 150px 25px;
+    width: 100vw;
+    height: auto;
+  }
+
+  /* Contact Page */
+  #contact-section-header {
+    background-image: url("../img/contact/contact-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-container {
+    margin-top: 32px;
+    padding: 20px;
+    color: var(--tertiary-color);
+    font-size: 1.8em;
+    background-color: #02161D;
+    filter: opacity(0.9);
+    border-radius: 10px;
+  }
+
+  .form-control {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #AFAFAF;
+  }
+
+  .btn-form {
+    font-size: 1em;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .section-info {
+    padding: 50px 25px;
+    color: var(--tertiary-color);
+  }
+
+  .info-title {
+    margin-bottom: 20px;
+    font-size: 3.2em;
+    text-align: center;
+  }
+
+  .info-paragraph {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-travel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--tertiary-color);
+  }
+
+  .card-travel-title {
+    text-align: center;
+    font-size: 2.4em;
+    padding: 24px;
+  }
+
+  .card-travel-container--contact{
+    height: 150px;
+    margin: 10px auto;
+  }
+
+  #contact-section-info {
+    background-image: url("../img/contact/contact-info.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #chascomus {
+    background-image: url("../img/getaways/chascomus.jpg");
+  }
+
+  #sventana {
+    background-image: url("../img/getaways/sventana.jpg");
+  }
+
+  #tandil {
+    background-image: url("../img/getaways/tandil.jpg");
+  }
+
+  #montevideo {
+    background-image: url("../img/getaways/montevideo.jpg");
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+  }
+
+  .section-footer--links>ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .section-footer--links>ul>li {
+    padding: 18px;
+    text-align: center;
+  }
+
+  .section-footer--links>ul>li>a {
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  .section-footer--social>p {
+    padding: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .section-footer--social-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 60%;
+  }
+
+  /* About Page */
+
+  .about-card-titles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card-subtitle {
+    margin: 0px auto;
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--tertiary-color);
+    display: block;
+  }
+
+  .about-info-section {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+  }
+
+  .about-quote-section {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+  }
+
+  .about-info-section-title {
+    font-size: 3.2em;
+    padding-top: 8%;
+    text-align: center;
+  }
+
+  .about-quote-paragraph {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 2.4em;
+    text-align: center;
+    padding-top: 20%;
+    color: var(--primary-color);
+  }
+
+  .about-trekking>img {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+  }
+
+  #info-quote {
+    font-size: 1.6em;
+    padding-bottom: 8%;
+  }
+
+  #quote-name {
+    margin: 20px auto;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    width: 80%;
+    padding-bottom: 20%;
+  }
+
+  #about-section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/about/header.jpg");
+    background-position: center;
+    height: 100vh;
+  }
+
+  /* Contact Page */
+  #contact-section-header {
+    background-image: url("../img/contact/contact-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* Home Page */
+
+  /* Main */
+  .section-header-home {
+    height: 75vh;
+    width: 100vw;
+    background-image: url("../img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #title-section-home {
+    padding-top: 200px;
+    padding-left: 24px;
+  }
+
+  #card-titles-container--home {
+    padding: 0;
+  }
+
+  .card-container {
+    display: none;
+  }
+
+  .title-section {
+    font-size: 6em;
+    color: var(--tertiary-color);
+  }
+
+  /* Section hots */
+  .card-travels-container--title {
+    height: 100px;
+    padding: 45px 20px;
+    margin: 0;
+    font-size: 3.2em;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+  }
+
+  .card-travel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 2.4em;
+    color: var(--tertiary-color);
+  }
+
+  .card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .card-footer {
+    display: none;
+  }
+
+  .card-button:hover {
+    color: white;
+    background-color: black;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  #new-zealand {
+    background-image: url(../img/new-zealand.jpg);
+    background-size: cover;
+  }
+  #globo {
+    background-image: url(../img/tours/viajeGlobo.avif);
+    background-size: cover;
+  }
+
+  #indonesia {
+    background-image: url(../img/indonesia.jpg);
+    background-size: cover;
+  }
+
+  #canada {
+    background-image: url(../img/canada.jpg);
+    background-size: cover;
+  }
+
+  /* Sections populars */
+  .section-populars-container>.title-section {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .section-populars {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-image: url("../img/section-two.png");
+    background-size: cover;
+  }
+
+  .section-populars>.title-section {
+    padding-top: 50px;
+    font-size: 3.2em;
+    text-align: left  ;
+  }
+
+  .paragraph-section {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 1.4em;
+    text-align: center;
+    color: var(--tertiary-color);
+  }
+
+  .section-populars-container--cards>.card-travel {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    padding: 24px;
+    margin: 10px auto;
+    height: 130px;
+    width: 80%;
+    text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 5px;
+  }
+
+  .section-populars-container--cards>.card-travel:hover {
+    filter: brightness(0.5);
+    animation-delay: 3s;
+  }
+
+  #norway {
+    background-image: url("../img/norway.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #guatemala {
+    background-image: url("../img/guatemala.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #senderismo {
+    background-image: url("../img/tours/senderismo.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #experience {
+    background-image: url("../img/tours/experince.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #extremo {
+    background-image: url("../img/tours/extremo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #noche {
+    background-image: url("../img/tours/noche.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #paracaidas {
+    background-image: url("../img/tours/paracaidas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #snowboard {
+    background-image: url("../img/tours/snowboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #surf {
+    background-image: url("../img/tours/surf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #gourmet {
+    background-image: url("../img/tours/gourmet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #peru {
+    background-image: url("../img/peru.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #morocco {
+    display: none;
+  }
+
+  /* Sections videos */
+  .section-videos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    background-image: url("../img/section-three.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .section-videos-container--text>.title-section {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .section-videos-container--text>.card-button {
+    width: 60%;
+    margin: auto;
+  }
+
+  .section-videos-container--text>.card-button>img {
+    margin: 10px;
+  }
+
+  .card-video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+
+  /* Travels Page */
+  .travels-button-container {
+    z-index: 1;
+    position: absolute;
+    top:120px;
+    width: 100%;
+  }
+
+  .travels-button {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+  .travels-button:hover {
+    color: white;
+    background-color: black;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  /* Main */
+  #section-header-travels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/travels/home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card-titles-container {
+    padding: 0;
+  }
+
+  .section-info-container {
+    padding: 25px 0;
+  }
+
+  .section-info-container>.img {
+    display: block;
+    margin: 15px auto;
+    height: 180px;
+    width: 80%;
+  }
+
+  .section-info-container>div>.title-section {
+    text-align: center;
+    font-size: 3.2em;
+  }
+
+  .section-info {
+    background-color: var(--primary-color);
+    padding-bottom: 50px;
+  }
+
+  #one {
+    background-image: url('../img/travels/one-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #two {
+    background-image: url('../img/travels/two-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #title-section-travels {
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  /* Log in Page */
+  .login-foot {
+    display: grid;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--tertiary-color);
+  }
+  
+  /* Contact Page */
+  .section-info-text {
+    display: flex;
+    gap: 16px;
+  }
+
+  .info-title {
+    text-align: left;
+    width: 40%;
+  }
+
+  .info-paragraph {
+    text-align: left;
+    width: 50%;
+  }
+
+  .section-info-cards {
+    display: flex;
+    gap: 16px;
+  }
+
+  .card-travel-container {
+    height: 280px;
+  }
+
+  /* About Page */
+  .title-section {
+    font-size: 6.4em;
+  }
+
+  .about-quote-paragraph {
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 50%;
+    font-size: 2.1em;
+  }
+
+  .about-info-section-title {
+    padding-bottom: 4%;
+    font-size: 4.8em;
+  }
+
+  #info-quote {
+    width: 80%;
+  }
+
+  #quote-name {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 15%;
+  }
+
+  /* Travels Page */
+
+  .section-info {
+    padding: 30px;
+  }
+
+  .section-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .section-info-container:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  .section-info-container>div {
+    width: 80%;
+  }
+
+
+  .section-info-container>div>.title-section {
+    text-align: left;
+    font-size: 4.8em;
+  }
+
+  .section-info-container>div>.paragraph-section {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .section-info-container>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .section-info-container>div:nth-child(1)>.title-section {
+    text-align: left;
+    font-size: 4.8em;
+  }
+
+  .section-info-container>div:nth-child(1)>.paragraph-section {
+    text-align: left;
+  }
+
+  .section-info-container>.img {
+    margin: 20px 0;
+    width: 250px;
+    height: 440px;
+  }
+
+  #one {
+    background-image: url('../img/travels/three.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #two {
+    background-image: url('../img/travels/four.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Home Page */
+
+   /* Main */
+   #card-titles-container--home{
+    padding-top: 25%;
+    padding-left: 8%;
+  }
+
+  /* Section hots */
+  .card-travel-container {
+    flex-direction: initial;
+  }
+
+  .card-travel {
+    flex-direction: column;
+    width: 33.33%;
+    height: 300px;
+  }
+
+  .card-travel {
+    padding-top: 24px;
+  }
+
+  #new-zealand {
+    background-position: bottom;
+  }
+
+  #indonesia {
+    background-position: bottom;
+  }
+
+  #canada {
+    background-position: bottom;
+  }
+
+  /* Sections populars */
+  .section-populars {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .section-populars-container {
+    display: flex;
+    padding: 30px;
+  }
+
+  .section-populars-container .title-section {
+    width: 200px;
+    font-size: 4.2em;
+  }
+
+  .paragraph-section {
+    padding-top: 10px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .section-populars-container--cards {
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-populars-container--cards > .card-travel {
+    justify-content: end;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+  }
+
+  #norway {
+    background-image: url("../img/norway.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #guatemala {
+    background-image: url("../img/guatemala.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #peru {
+    background-image: url("../img/peru.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Sections videos */
+  .section-videos > .card-button {
+    width: 35%;
+  }
+
+  .paragraph-section {
+    text-align: center;
+  }
+
+  .section-videos-container{
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  #card-titles-container--home {
+    padding: 0;
+  }
+
+  #title-section-home {
+    padding-left: 36px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 996px) {
+
+  /* Header */
+  .section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    width: 100%;
+  }
+
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    margin: 0 30px;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+
+  .card-title {
+    font-size: 7.2em;
+    text-align: left;
+  }
+
+  .card-subtitle {
+    font-size: 2.4em;
+    text-align: left;
+  }
+
+  .card-titles-container {
+    max-width: 450px;
+  }
+
+  .form-container {
+    max-width: 450px;
+  }
+
+  .section-info {
+    padding: 10%;
+  }
+
+  .section-info-text {
+    max-width: 700px;
+  }
+
+  #france {
+    display: flex;
+    background-image: url("../img/contact/france.png");
+  }
+
+  /* Log in Page */
+  #login-section-header {
+    background-image: url("../img/login/login-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: inherit;
+  }
+
+  .login-section-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .login-foot {
+    display: grid;
+    color: var(--tertiary-color);
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .login-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px !important;
+    display: block;
+    width: 200px;
+  }
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .section-footer--links>ul {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+  }
+
+  /* About Page */
+
+  .about-card-titles-container {
+    display: block;
+  }
+
+  .about-card-titles-container>h1 {
+    text-align: left;
+    font-size: 6em;
+  }
+
+  .about-card-subtitle>span {
+    display: inline;
+    font-size: 3em;
+  }
+
+  .about-info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-info-section-title {
+    text-align: left;
+    font-size: 6.4em;
+  }
+
+  .about-info-section-title>span {
+    display: block;
+  }
+
+  .about-trekking>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-quote-paragraph {
+    width: 100%;
+    padding: 5% 15% 0% 15%;
+    font-size: 3.2m;
+  }
+
+  #quote-name {
+    width: 100%;
+    padding: 2% 15% 5% 15%;
+    font-size: 2.5em;
+  }
+
+  #info-quote {
+    width: 100%;
+    text-align: left;
+  }
+
+  #about-section-header {
+    justify-content: flex-start;
+    padding-left: 100px;
+  }
+
+  .about-info-section--container {
+    margin: auto;
+    width: 80%;
+  }
+
+  #card-travel-container--home {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--tertiary-color);
+  }
+
+  /* Travels Page */
+
+  #section-header-travels {
+    background-image: url("../img/travels/home-desktop.png");
+  }
+
+  .section-info-container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .section-info-container>div>.title-section {
+    font-size: 6.4em;
+  }
+
+  .section-info-container>div>.paragraph-section {
+    font-size: 1.6em;
+  }
+
+  .section-info-container>div:nth-child(1) {
+    justify-content: left;
+  }
+
+  .section-info-container>div:nth-child(1)>.title-section {
+    width: min-content;
+  }
+
+  .section-info-container>div:nth-child(1)>.paragraph-section {
+    width: 40%;
+  }
+
+  .section-info-container>.img {
+    margin: 20px 0;
+    max-width: 570px;
+    max-height: 520px;
+  }
+
+  #one {
+    background-image: url('../img/travels/five.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #two {
+    background-image: url('../img/travels/six.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Home Page */
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    margin: 0 30px;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  /* Main */
+  .section-header {
+    height: 110vh;
+    width: auto;
+  }
+
+  .title-section {
+    font-size: 7.6em;
+  }
+
+  /* Section hots */
+  .section-hots {
+    width: 40%;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+  }
+
+  .card-travels-container--title {
+    background: none;
+  }
+
+  #card-titles-container--home{
+    display: contents;
+  }
+
+  .card-footer {
+    display: block;
+  }
+
+  .card-travel {
+    width: 100%;
+    height: 150px;
+  }
+
+  .card-travel > .card-title {
+    font-size: 3.2rem;
+  }
+
+  #morocco {
+    display: flex;
+    background-image: url("../img/morocco.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card-footer {
+    padding: 10px;
+    background-color: var(--primary-color);
+  }
+
+  .card-footer > a {
+    color: var(--tertiary-color);
+    font-size: 2.4em;
+    text-decoration: none;
+  }
+
+  /* Section populars */
+  .section-populars-container {
+    display: flex;
+    align-items: end;
+    margin: auto;
+    width: 80%;
+  }
+
+  .section-populars-container > .title-section {
+    font-size: 6.4em;
+    padding-top: 60px;
+  }
+
+   /* Section videos */
+  .section-videos {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+  }
+
+  .section-videos-container {
+    align-items: end;
+    padding: 0;
+  }
+
+  .section-videos-container > .card-video {
+    width: 225px;
+  }
+
+  .section-videos-container--text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 25px;
+    width: 50%;
+  }
+
+  .section-videos-container--text > .title-section {
+    margin: 0;
+    text-align: left;
+  }
+
+  .section-videos-container--text > .card-button {
+    margin: 0;
+    width: 225px;
+  }
+
+  .section-videos-container--text > .paragraph-section {
+    margin: 0;
+    width: 350px;
+    text-align: left;
+  }
+}
