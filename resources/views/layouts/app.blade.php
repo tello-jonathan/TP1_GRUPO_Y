@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Paquetes</a></li>
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Actividades</a></li>
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Escapadas</a></li>
 

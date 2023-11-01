@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\PaquetesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,5 +23,6 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/inicio', [InicioController::class, 'index'])->name('inicio');
+Route::get('/Paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 
 Auth::routes();

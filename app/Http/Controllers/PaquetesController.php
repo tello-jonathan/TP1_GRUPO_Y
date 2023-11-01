@@ -3,13 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Inicio;
+use App\Models\Paquetes;
 
-class InicioController extends Controller
+class PaquetesController extends Controller
 {
     public function index(){
-        return view('index');
+        return view('pages/paquete');
     }
-    
-    
 }
