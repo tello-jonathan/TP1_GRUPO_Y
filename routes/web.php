@@ -1,8 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PaquetesController;
+use App\Http\Controllers\ActividadController;
 
 
 /*
@@ -24,5 +26,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/inicio', [InicioController::class, 'index'])->name('inicio');
 Route::get('/Paquetes', [PaquetesController::class, 'index'])->name('paquetes');
+Route::get('/Actividades',[ActividadController::class,'index'])->name('actividades');
 
 Auth::routes();

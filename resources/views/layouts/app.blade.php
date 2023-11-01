@@ -12,7 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -32,7 +32,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
-                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Escapadas</a></li>
 
                     </ul>
@@ -84,12 +84,12 @@
                 <section class="section-footer--links">
                   <ul>
                     <li><a href=""><img src="img/adventure.svg" alt=""></a></li>
-                    <li><a class="text-white ps-2 pe-2" href="index.html">Inicio</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="pages/travels.html">Paquetes</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="pages/activities.html">Actividades</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="pages/getaways.html">Escapadas</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="pages/contact.html">Contactanos</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="pages/about.html">Nosotros</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('inicio') }}">Inicio</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="#">Escapadas</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="#">Contactanos</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="#">Nosotros</a></li>
                   </ul>
                 </section>
                 <section class="section-footer--social">
