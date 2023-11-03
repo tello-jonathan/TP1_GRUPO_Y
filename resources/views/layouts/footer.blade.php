@@ -1,11 +1,11 @@
 <footer class="footer">
     <section class="section-footer--links">
       <ul>
-        <li><a href=""><img src="img/adventure.svg" alt=""></a></li>
+        <li><a href="{{ route('inicio') }}"><img src="img/adventure.svg" alt=""></a></li>
         <li><a class="text-white ps-2 pe-2" href="{{ route('inicio') }}">Inicio</a></li>
         <li><a class="text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
         <li><a class="text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
-        <li><a class="text-white ps-2 pe-2" href="#">Escapadas</a></li>
+        <li><a class="text-white ps-2 pe-2" href="{{ route('escapadas') }}">Escapadas</a></li>
         <li><a class="text-white ps-2 pe-2" href="#">Contactanos</a></li>
         <li><a class="text-white ps-2 pe-2" href="#">Nosotros</a></li>
       </ul>

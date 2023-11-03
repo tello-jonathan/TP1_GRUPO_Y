@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PaquetesController;
 use App\Http\Controllers\ActividadController;
-
+use App\Http\Controllers\EscapadaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +25,14 @@ Route::get('/', [InicioController::class, 'index'])->name('inicio');
 Route::get('/inicio', [InicioController::class, 'index'])->name('inicio');
 Route::get('/paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 Route::get('/actividades',[ActividadController::class,'index'])->name('actividades');
+Route::get('/escapadas',[EscapadaController::class,'index'])->name('escapadas');
 
 Auth::routes();
-
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
