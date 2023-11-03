@@ -19,7 +19,9 @@
 </head>
 <body>
     <div id="app">
-        @yield('navbar')
+        @hasSection('navbar')
+            @yield('navbar')
+        @endif
         <main class="py-4">
             @yield('content')
         </main>
