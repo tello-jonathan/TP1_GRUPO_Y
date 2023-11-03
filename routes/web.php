@@ -18,14 +18,16 @@ use App\Http\Controllers\ActividadController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [InicioController::class, 'index'])->name('inicio');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/inicio', [InicioController::class, 'index'])->name('inicio');
 Route::get('/Paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 Route::get('/Actividades',[ActividadController::class,'index'])->name('actividades');
 
 Auth::routes();
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
