@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('navbar')
+    @include('layouts.navbar')
+@endsection
 @section('content')
     <section class="section-header-home">
       <div class="card-titles-container" id="card-titles-container--home">

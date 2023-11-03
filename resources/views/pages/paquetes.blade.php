@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('navbar')
+    @include('layouts.navbar')
+@endsection
 @section('content')
 <section class="section-header" id="section-header-travels">
     <div class="container-fluid travels-button-container">
