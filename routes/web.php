@@ -7,8 +7,7 @@ use App\Http\Controllers\PaquetesController;
 use App\Http\Controllers\ActividadController;
 use App\Http\Controllers\EscapadaController;
 use App\Http\Controllers\ContactoController;
-use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\NosotrosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +29,7 @@ Route::get('/paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 Route::get('/actividades',[ActividadController::class,'index'])->name('actividades');
 Route::get('/escapadas',[EscapadaController::class,'index'])->name('escapadas');
 Route::get('/contacto',[ContactoController::class,'index'])->name('contacto');
+Route::get('/nosotros',[NosotrosController::class,'index'])->name('nosotros');
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

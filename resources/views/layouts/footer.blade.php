@@ -7,7 +7,7 @@
         <li><a class="text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
         <li><a class="text-white ps-2 pe-2" href="{{ route('escapadas') }}">Escapadas</a></li>
         <li><a class="text-white ps-2 pe-2" href="{{ route('contacto') }}">Contactanos</a></li>
-        <li><a class="text-white ps-2 pe-2" href="#">Nosotros</a></li>
+        <li><a class="text-white ps-2 pe-2" href="{{('nosotros')}}">Nosotros</a></li>
       </ul>
     </section>
     <section class="section-footer--social">
