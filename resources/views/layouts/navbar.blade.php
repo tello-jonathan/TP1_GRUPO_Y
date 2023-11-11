@@ -20,9 +20,10 @@
       </div>
       <div class="container-fluid justify-content-end">
         <div class="d-flex justify-content-between">
-          <button type="button" class=" btn btn-outline-secondary btn-lg">
-            <a class="nav-link text-white ps-2 pe-2" href="{{ route('login') }}">Ingreso</a>
-          </button>
+           <li class="nav-item">
+            <a class="nav-link text-white ps-2 pe-2" href="#">Ingreso</a>
+              <a class="nav-link text-white ps-2 pe-2" href="contact.html">¿Necesitás ayuda? ¡Contactanos!</a>
+           </li>
         </div>
       </div>  
     </nav>
