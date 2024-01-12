@@ -5,15 +5,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PaquetesController;
 use App\Http\Controllers\ActividadController;
-<<<<<<< Updated upstream
-
-=======
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\EscapadaController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\NosotrosController;
 use App\Http\Controllers\AdminController;
 use App\Models\Admin;
->>>>>>> Stashed changes
 
 /*
 |--------------------------------------------------------------------------
@@ -33,12 +30,8 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/inicio', [InicioController::class, 'index'])->name('inicio');
-<<<<<<< Updated upstream
 Route::get('/Paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 Route::get('/Actividades',[ActividadController::class,'index'])->name('actividades');
-
-Auth::routes();
-=======
 Route::get('/paquetes', [PaquetesController::class, 'index'])->name('paquetes');
 Route::get('/actividades',[ActividadController::class,'index'])->name('actividades');
 Route::get('/escapadas',[EscapadaController::class,'index'])->name('escapadas');
@@ -47,8 +40,5 @@ Route::get('/nosotros',[NosotrosController::class,'index'])->name('nosotros');
 Route::resource('admin',AdminController::class);
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> Stashed changes
+Auth::routes();

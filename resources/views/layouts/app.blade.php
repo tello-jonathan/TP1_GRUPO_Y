@@ -33,7 +33,7 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
                         <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
-                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('inicio') }}">Escapadas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('escapadas') }}">Escapadas</a></li>
 
                     </ul>
 
@@ -87,9 +87,9 @@
                     <li><a class="text-white ps-2 pe-2" href="{{ route('inicio') }}">Inicio</a></li>
                     <li><a class="text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
                     <li><a class="text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="#">Escapadas</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="#">Contactanos</a></li>
-                    <li><a class="text-white ps-2 pe-2" href="#">Nosotros</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('escapadas') }}">Escapadas</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('contacto') }}">Contactanos</a></li>
+                    <li><a class="text-white ps-2 pe-2" href="{{ route('nosotros') }}">Nosotros</a></li>
                   </ul>
                 </section>
                 <section class="section-footer--social">

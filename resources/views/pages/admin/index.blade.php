@@ -6,6 +6,7 @@
 @if (Session::has('mensaje'))
 {{Session::get('mensaje')}}
 @endif
+@section('content')
     <a href="{{url('/admin/create')}}">Registar</a>
     <table class="table table-light">
         <thead class="thead-light">
@@ -44,3 +45,4 @@
             @endforeach
         </tbody>
     </table>
+@endsection    

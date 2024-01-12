@@ -12,9 +12,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{route('inicio')}}">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('paquetes') }}">Paquetes</a></li>
-              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('actividades') }}">Actividades</a></li>
-              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{ route('escapadas') }}">Escapadas</a></li>
+              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{route('paquetes')}}">Paquetes</a></li>
+              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{route('actividades')}}">Actividades</a></li>
+              <li class="nav-item"><a class="nav-link text-white ps-2 pe-2" href="{{route('escapadas')}}">Escapadas</a></li>
           </ul>
         </div>
       </div>

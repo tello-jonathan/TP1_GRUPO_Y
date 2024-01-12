@@ -8,6 +8,6 @@ use App\Models\Paquetes;
 class PaquetesController extends Controller
 {
     public function index(){
-        return view('pages/paquetes');
+        return view('pages.paquetes');
     }
 }
